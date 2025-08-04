@@ -32,25 +32,24 @@
   <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem; color: #ccc;">
     💌 Got a question, an idea, or just want to say hi?<br>Drop us a message—we’d love to hear from you!
   </p>
-  <form method="post" action="#" style="display: flex; flex-direction: column; gap: 1rem;">
+  <form id="contact-form" method="post" action="#" style="display: flex; flex-direction: column; gap: 1rem;">
     <label>
       Name:
-      <input type="text" name="name" required />
+      <input id="name" type="text" name="name" required />
     </label>
     <label>
       Email:
-      <input type="email" name="email" required />
+      <input id="email" type="email" name="email" required />
     </label>
     <label>
       Message:
-      <textarea name="message" rows="6" required></textarea>
+      <textarea id="message" name="message" rows="6" required></textarea>
     </label>
     <input type="text" name="_gotcha" style="display:none">
     <button type="submit" class="btn">Send Message</button>
   </form>
   <p style="margin-top: 2rem; text-align: center;">Or email us <a class="link" href="mailto:mrbfortier@gmail.com">here</a>!</p>
 </main>
-
 
   <!-- Footer -->
   <footer>
@@ -61,5 +60,7 @@
     </div>
   </footer>
 
+
+  <script src="js/message.js"></script>
 </body>
 </html>
